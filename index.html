@@ -1,1 +1,113 @@
-Hello World
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+		<style>
+			#startText {
+				font-family: 'IBM Plex Sans', sans-serif;
+				color: #57cc64;
+			}
+			
+			h1 {
+				font-size: 36px;
+				font-weight: bold;
+				letter-spacing: 1em;
+				text-transform: uppercase;
+			}
+			
+			h2 {
+				font-size: 28px;
+				letter-spacing: 0.2em;
+			}
+			
+			#startBox {
+				position: absolute;
+				max-width: 1000px;
+				width: 100%;
+				height: 100px;
+				left: 50%;
+				margin-left:-500px;
+				top: 50%;
+				margin-top: -50px;
+				text-align: center;
+			}
+			
+			button#startPrompt {
+				position: absolute;
+				width: 180px;
+				height: 50px;
+				left: 50%;
+				margin-left:-90px;
+				top: 50%;
+				margin-top: 50px;
+				padding: 0;
+				background-color: black;
+				border: 2px solid black;
+				transition: all 0.3s ease 0s;
+				cursor: pointer;
+				
+			}
+			
+			button:hover {
+				box-shadow: inset 0 0 0 2px #57cc64;
+			}
+			
+			button:focus {
+			outline:0;
+			}
+			
+			h2#startText {
+				margin-top: 2px;
+				font-weight: normal;
+			}
+			
+			body {
+				background-color: black;
+			}
+			
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+			</style>
+	</head>
+	
+	<body onload="typeWriter()">
+		<div id="startBox">
+			<h1 id="startText"></h1>
+		</div>
+		
+		<div id="buttonAppear">
+			<button id="startPrompt" onclick="begin()">
+				<h2 id="startText">>begin</h2>
+			</button>
+		</div>
+		
+		<audio loop id="shopSong" src="audio/frogShop.wav">
+		</audio>
+		
+		<img id="frogPic" src="images/frogDance.gif" style="display:none;"/>
+		
+		<script>
+			var i = 0;
+			var txt = 'Frog Website 2';
+			var speed = 150;
+
+			function typeWriter() {
+				if (i < txt.length) {
+					document.getElementById("startText").innerHTML += txt.charAt(i);
+					i++;
+					setTimeout(typeWriter, speed);
+				}
+				
+			}
+
+			function begin() {
+				var audio = document.getElementById("shopSong");
+				audio.play();
+				
+				document.getElementById('frogPic').style.display='block';
+			}
+</script>
+	</body>
+</html>

@@ -1,8 +1,31 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<meta http-equiv="refresh" content="0; /html/startPage.html" />
+		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/css/startStyle.css">
 	</head>
-	<body>
+	
+	<body onload="typeWriter()">
+		<div id="startBox">
+			<h1 id="startText"></h1>
+		</div>
+		
+		<div id="buttonAppear">
+			<button id="startPrompt" onclick="begin()">
+				<h2 id="startText">>begin</h2>
+			</button>
+		</div>
+		
+		<audio loop id="shopSong" src="/audio/frogShop.wav">
+		</audio>
+		<audio loop id="discoSong" src="/audio/frogDisco.wav">
+		</audio>
+		<audio loop id="boomySong" src="/audio/frogSong.wav">
+		</audio>
+		
+		<img id="frogPic" src="/images/frogDance.gif" style="display:none;"/>
+		
+		<script src="\javascript\startScript.js"></script>
+		
 	</body>
 </html>

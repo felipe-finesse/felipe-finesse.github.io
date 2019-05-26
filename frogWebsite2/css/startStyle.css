@@ -74,3 +74,30 @@ img {
 	left: 0;
 	z-index: -1;
 }		
+
+.hidden {
+
+	display:none;
+
+
+}
+
+.show {
+
+	display: inline;
+
+}
+
+.wrapper{
+	text-align: center;
+	margin-top: 200px;
+
+}
+
+.button{
+
+	position: absolute;
+	top:50%;
+
+
+}

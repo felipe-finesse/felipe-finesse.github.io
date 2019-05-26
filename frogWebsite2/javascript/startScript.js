@@ -17,6 +17,7 @@ function begin() {
 	randomSong();
 	document.getElementById('frogPic').style.display='block';
 	document.getElementById('startPrompt').style.display='none';
+	document.getElementById("button").className = 'show';
 }
 
 //Chooses Song to play

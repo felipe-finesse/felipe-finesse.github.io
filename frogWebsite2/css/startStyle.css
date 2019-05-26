@@ -3,6 +3,13 @@
 	color: #57cc64;
 }
 
+::selection {
+  background: #000; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #000; /* Gecko Browsers */
+}
+
 h1 {
 	font-size: 36px;
 	font-weight: bold;
@@ -27,7 +34,7 @@ h2 {
 	text-align: center;
 }
 
-button#startPrompt {
+button.startButton {
 	position: absolute;
 	width: 180px;
 	height: 50px;
@@ -36,15 +43,14 @@ button#startPrompt {
 	top: 50%;
 	margin-top: 50px;
 	padding: 0;
-	background-color: black;
-	border: 2px solid black;
+	background-color: rgba(0, 0, 0, 0);
 	transition: all 0.3s ease 0s;
 	cursor: pointer;
-	
+	border-style: none;
 }
 
 button:hover {
-	box-shadow: inset 0 0 0 2px #57cc64;
+	box-shadow: inset 0 0 0 3px #57cc64;
 }
 
 button:focus {

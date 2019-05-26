@@ -15,9 +15,19 @@ function typeWriter() {
 //When viewer clicks '>begin'
 function begin() {
 	randomSong();
-	document.getElementById('frogPic').style.display='block';
-	document.getElementById('startPrompt').style.display='none';
-	document.getElementById("button").className = 'show';
+	show('frogPic');
+	hide('startPrompt');
+	show('startHome');
+}
+
+//Function to show a thing
+function show(element) {
+	document.getElementById(element).style.display='block';
+}
+
+//Function to hide a thing
+function hide(element) {
+	document.getElementById(element).style.display='none';
 }
 
 //Chooses Song to play

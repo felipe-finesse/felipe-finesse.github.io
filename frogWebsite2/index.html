@@ -10,29 +10,26 @@
 			<h1 id="startText"></h1>
 		</div>
 		
-		<div id="buttonAppear">
-			<button id="startPrompt" onclick="begin()">
+			<button id="startPrompt" class="startButton" onclick="begin()">
 				<h2 id="startText">>begin</h2>
 			</button>
-		</div>
+			
+			<button id="startHome" class="startButton" style="display:none;" onclick="window.location.href = 'html/home.html';">
+				<h2 id="startText" style="width:auto;">>home</h2>
+			</button>
 		
 		<audio loop id="shopSong" src="audio/frogShop.wav">
 		</audio>
+		
 		<audio loop id="discoSong" src="audio/frogDisco.wav">
 		</audio>
+		
 		<audio loop id="boomySong" src="audio/frogSong.wav">
 		</audio>
 		
 		<img id="frogPic" src="images/frogDance.gif" style="display:none;"/>
 		
 		<script src="javascript/startScript.js"></script>
-
-		
-		<div class ="wrapper">
-
-				<button id=button class="hidden" class="button">FROG FACTS</button>
-			
-			</div>
 		
 	</body>
 </html>

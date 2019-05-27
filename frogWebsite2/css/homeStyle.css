@@ -82,6 +82,15 @@ input {
 	margin-bottom: 20px;
 	width: 90%;
 	padding: 12px 20px;
+	border: none;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+	background-color: #4CAF50;
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+	background-color: #57cc64;
 }
 
 textarea:focus, input:focus{

@@ -67,3 +67,23 @@ a {
 	padding: 10px;
 	font-size: 30px;
 }
+
+mark {
+	padding:5px;
+	background-color: #57cc64;
+}
+
+form {
+	background-color: #eee;
+	padding: 20px;
+}
+
+input {
+	margin-bottom: 20px;
+	width: 90%;
+	padding: 12px 20px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
